@@ -7,7 +7,7 @@ char    *ft_strcpy(char *dst, const char *src)
     i = 0;
     while (src[i] != '\0')
     {
-        dup[i] = s1[i];
+        dst[i] = src[i];
         i++;
     }
     dst[i] = '\0';
