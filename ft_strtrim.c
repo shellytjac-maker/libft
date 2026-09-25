@@ -7,7 +7,7 @@ static int  is_whitespace(char c)
 
 char    *ft_strtrim(char const *s)
 {
-    size_t  strat;
+    size_t  start;
     size_t  end;
     char    *trimmed;
 
@@ -18,5 +18,5 @@ char    *ft_strtrim(char const *s)
     while (end > start && is_whitespace(s[end - 1]))
         end--;
     trimmed = ft_strsub(s, start, end - start);
-    return (trimmed)
+    return (trimmed);
 }

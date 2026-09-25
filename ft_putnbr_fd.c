@@ -1,6 +1,6 @@
 # include "libft.h"
 
-void    ft_putnbr(int n, int fd)
+void    ft_putnbr_fd(int n, int fd)
 {
     long    num;
 
@@ -11,6 +11,6 @@ void    ft_putnbr(int n, int fd)
         num = -num;
     }
     if (num >= 10)
-        ft_putnbr(num / 10, fd)
-    ft_putchar(num % 10 + '0', fd);
+        ft_putnbr_fd(num / 10, fd);
+    ft_putchar_fd(num % 10 + '0', fd);
 }

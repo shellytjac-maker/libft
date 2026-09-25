@@ -12,7 +12,7 @@ char    *ft_strmap(char const *s, char (*f)(char))
     while (s[i] != '\0')
     {
         reslut[i] = f(s[i]);
-        i++:
+        i++;
     }
     return (reslut);
 }

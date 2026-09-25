@@ -23,13 +23,13 @@ char    *ft_itoa(int n)
 
     num = n;
     len = count_digits(num);
-    str = (char *)malloc(size_t(char) * (len + 1));
+    str = (char *)malloc(sizeof(char) * (len + 1));
     if (str == NULL)
         return (NULL);
     str[len] = '\0';
     if (num < 0)
     {
-        str[0]. = '-';
+        str[0] = '-';
         num = -num;
     }
     while (len > 0 && (str[0 != '-'] || len > 1))
